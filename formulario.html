@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>🍦 Monte seu sorvete</h2>
+
+  <form id="formSorvete">
+    
+    <!-- Nome -->
+    <label>Nome:</label><br>
+    <input type="text" id="nome" required><br><br>
+
+    <!-- Sabor -->
+    <label>Escolha o sabor:</label><br>
+    <select id="sabor" required>
+      <option value="">Selecione</option>
+      <option value="chocolate">Chocolate</option>
+      <option value="baunilha">Baunilha</option>
+      <option value="morango">Morango</option>
+    </select><br><br>
+
+    <!-- Tamanho -->
+    <label>Tamanho:</label><br>
+    <input type="radio" name="tamanho" value="pequeno" required> Pequeno
+    <input type="radio" name="tamanho" value="medio"> Médio
+    <input type="radio" name="tamanho" value="grande"> Grande<br><br>
+
+    <!-- Complementos -->
+    <label>Complementos:</label><br>
+    <input type="checkbox" value="granulado"> Granulado<br>
+    <input type="checkbox" value="calda"> Calda<br>
+    <input type="checkbox" value="frutas"> Frutas<br><br>
+
+    <!--Espaço para as obervações-->
+    <label for="Observarções">Observarções</label><br>
+    <textarea name="ObservarçõesSorvetes" id="Observarções" rows="4" cols="30"></textarea>
+    <br><br>
+
+    <!-- Botão -->
+    <button type="submit">Fazer Pedido</button>
+
+  </form>
+
+  <h3 id="resultado"></h3>
+</body>
+</html>
