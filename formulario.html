@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <h2>🍦 Monte seu sorvete</h2>
+  <h2>🍦 Monte seu sorvete</h2>
 
   <form id="formSorvete">
-    
+
     <!-- Nome -->
     <label>Nome:</label><br>
-    <input type="text" id="nome" required><br><br>
+    <input type="text" id="nome" required 
+      oninvalid="this.setCustomValidity('Informe seu nome')"
+      oninput="this.setCustomValidity('')" min="1" max="100"><br><br>
 
     <!-- Sabor -->
     <label>Escolha o sabor:</label><br>
@@ -37,7 +41,9 @@
 
     <!--Espaço para as obervações-->
     <label for="Observarções">Observarções</label><br>
-    <textarea name="ObservarçõesSorvetes" id="Observarções" rows="4" cols="30"></textarea>
+    <textarea name="ObservarçõesSorvetes" id="Observarções" rows="4" cols="30" required
+      oninvalid="this.setCustomValidity('Informe caso necessite de alguma alteração')"
+      oninput="this.setCustomValidity('')" minlength="1" maxlength="100"></textarea>
     <br><br>
 
     <!-- Botão -->
@@ -47,4 +53,5 @@
 
   <h3 id="resultado"></h3>
 </body>
+
 </html>
