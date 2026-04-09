@@ -22,12 +22,12 @@
   <form id="formSorvete">
 
     <!-- Nome -->
-    <label>Nome:</label><br>
+    <label for="nomeDoUsuario">Nome:</label><br>
     <input type="text" id="nome" required oninvalid="this.setCustomValidity('Informe seu nome')"
       oninput="this.setCustomValidity('')" min="1" max="100"><br><br>
 
     <!--Tipo de Produto-->
-    <label>Escolha o tipo:</label><br>
+    <label for="produtos">Escolha o tipo:</label><br>
     <select id="tipoDeProduto" required>
       <option value="">Selecione</option>
       <option value="sorvete">Sorvetes</option>
@@ -39,8 +39,8 @@
     </select><br><br>
 
     <!--Tipos de Especiais da casa-->
-    <label>Selecione o especial da casa:</label><br>
-    <select id="tipoDeProduto" required>
+    <label for="especiaisDaCasa">Selecione o especial da casa:</label><br>
+    <select id="tipoDeEspeciaisDaCasa" required>
       <option value="">Selecione</option>
       <option value="sorvete">Copo Nuvem (3 bolas + cobertura)</option>
       <option value="chupchup">Sundae dos Céus</option>
@@ -50,7 +50,7 @@
     </select><br><br>
 
     <!-- Sabor -->
-    <label>Escolha o sabor:</label><br>
+    <label for="sabor">Escolha o sabor:</label><br>
     <select id="sabor" required>
       <option value="">Selecione</option>
       <option value="nuvemChocolate">Nuvem de Chocolate 🍫</option>
@@ -77,13 +77,13 @@
     </select><br><br>
 
     <!-- Tamanho -->
-    <label>Tamanho:</label><br>
+    <label for="tamanho">Tamanho:</label><br>
     <input type="radio" name="tamanho" value="pequeno" required> Pequeno
     <input type="radio" name="tamanho" value="medio"> Médio
     <input type="radio" name="tamanho" value="grande"> Grande<br><br>
 
     <!-- Complementos -->
-    <label>Complementos:</label><br>
+    <label for="complementos">Complementos:</label><br>
     <input type="checkbox" value="granulado">Granulado<br>
     <input type="checkbox" value="leiteCondensado">Leite Condensado<br>
     <input type="checkbox" value="nutella">Nutella<br>
@@ -94,7 +94,7 @@
     <input type="checkbox" value="confetes">Confetes<br><br>
 
     <!--Espaço para as obervações-->
-    <label for="Observarções">Observarções</label><br>
+    <label for="observarções">Observarções</label><br>
     <textarea name="ObservarçõesSorvetes" id="Observarções" rows="4" cols="30" required
       oninvalid="this.setCustomValidity('Informe caso necessite de alguma alteração')"
       oninput="this.setCustomValidity('')" minlength="1" maxlength="100"></textarea>
