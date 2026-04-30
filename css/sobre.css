@@ -1,0 +1,90 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CORPO DO SITE */
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background: linear-gradient(to bottom, #a8d8ff, #ffffff, #ffc0cb);
+  color: #333;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+  padding: 40px;
+  text-align: center;
+}
+
+/* CARDS (produtos) */
+.card {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  margin: 15px;
+  border-radius: 20px;
+  width: 200px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* BOTÕES */
+button {
+  background: #ff9ecb;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff7eb3;
+}
+
+/* RODAPÉ */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
