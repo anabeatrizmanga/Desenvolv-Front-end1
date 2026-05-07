@@ -1,7 +1,6 @@
 /* RESET */
 * {
   margin: 40px;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -49,6 +48,11 @@ nav a:hover {
   transform: scale(1.05);
 }
 
+strong {
+  color: #ff69b4;
+  font-weight: bold;
+}
+
 /* TEXTOS */
 main {
   padding: 20px;
@@ -76,6 +80,7 @@ p {
 h4 {
   font-size: 1.1rem;
 }
+
 .subtexto {
   font-size: 1.0rem;
   color: #000000;
@@ -100,7 +105,8 @@ tbody {
 }
 
 tr {
-  display: contents; /* remove comportamento de linha */
+  display: contents;
+  /* remove comportamento de linha */
 }
 
 td {
@@ -161,7 +167,7 @@ footer {
   padding: 10px 50px;
   border-radius: 15px;
   transition: 0.3s;
-  
+
 }
 
 .footer-links a:hover {
@@ -172,6 +178,7 @@ footer {
   font-size: 1.0rem;
   color: #000000;
 }
+
 .historia {
   margin: 30px auto;
   max-width: 700px;
@@ -180,8 +187,8 @@ footer {
   border-radius: 20px;
   font-size: 110%;
 }
+
 .textoInicial {
   font-size: 1.2rem;
   color: #000000;
 }
-
