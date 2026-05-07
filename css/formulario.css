@@ -1,0 +1,134 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #a8d8ff, #ffffff, #ffc0cb);
+  min-height: 100vh;
+  padding: 20px;
+  color: #333;
+}
+
+/* TÍTULO */
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+/* NAVBAR */
+nav {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 18px;
+  border-radius: 20px;
+  margin: 5px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+
+/* FORMULÁRIO */
+form {
+  max-width: 700px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* LABELS */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* INPUTS */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* RADIO E CHECKBOX */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+/* TEXTAREA */
+textarea {
+  resize: none;
+}
+
+/* BOTÃO */
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  background: #ff9ecb;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff7eb3;
+  transform: scale(1.02);
+}
+
+/* RESULTADO */
+#resultado {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+  form {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+}
