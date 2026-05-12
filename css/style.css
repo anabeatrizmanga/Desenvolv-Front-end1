@@ -12,16 +12,6 @@ body {
   text-align: center;
 }
 
-/* HEADER */
-header {
-  padding: 20px;
-}
-
-header h1 {
-  font-size: 3.5rem;
-  color: white;
-}
-
 /* NAV */
 nav {
   margin: 15px 0;
@@ -77,16 +67,6 @@ p {
   font-size: 110%;
 }
 
-h4 {
-  font-size: 1.1rem;
-}
-
-.subtexto {
-  font-size: 1.0rem;
-  color: #000000;
-}
-
-
 /* SEÇÕES */
 section {
   margin: 30px 0;
@@ -96,31 +76,49 @@ section {
 table {
   margin: 20px auto;
   border-collapse: collapse;
+  width: 100%;
 }
 
+/* TABELA HORIZONTAL */
 tbody {
   display: flex;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
+  /* permite quebrar linha */
 }
 
 tr {
   display: contents;
-  /* remove comportamento de linha */
 }
 
+/* CARDS */
 td {
   background: rgba(255, 255, 255, 0.7);
   padding: 15px 25px;
   border-radius: 20px;
   font-weight: bold;
   transition: 0.3s;
+  text-align: center;
+  min-width: 150px;
 }
 
-/* Efeito hover */
+/* HOVER */
 td:hover {
   transform: scale(1.05);
   background: rgba(255, 255, 255, 0.9);
+}
+
+/* RESPONSIVO */
+
+tbody {
+  flex-direction: horizontal;
+  align-items: center;
+}
+
+td {
+  width: 90%;
+  max-width: 300px;
 }
 
 /* BOTÕES */
@@ -142,7 +140,7 @@ button:hover {
 
 /* LINKS */
 a {
-  color: inherit;
+  color: black;
 }
 
 footer {
@@ -174,8 +172,9 @@ footer {
   background: rgba(255, 255, 255, 0.5);
 }
 
+/* subtexto */
 .subtexto {
-  font-size: 1.0rem;
+  font-size: 1.5rem;
   color: #000000;
 }
 
@@ -191,4 +190,81 @@ footer {
 .textoInicial {
   font-size: 1.2rem;
   color: #000000;
+}
+
+.imagemum {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* permite quebrar linha */
+}
+
+.imagemum img {
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 50px;
+  margin: 50px;
+  margin-top: 100px;
+  box-shadow: #858383 0px 5px 15px;
+}
+
+.imagemdois {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+
+  gap: 20px;
+  flex-wrap: wrap;
+  /* permite quebrar linha */
+}
+
+.imagemdois img {
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 50px;
+  margin: 50px;
+  margin-top: 150px;
+  box-shadow: #858383 0px 5px 15px;
+}
+
+.imagemdois {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+
+  gap: 20px;
+  flex-wrap: wrap;
+  /* permite quebrar linha */
+}
+
+.imagemtres {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+
+  gap: 20px;
+  flex-wrap: wrap;
+  /* permite quebrar linha */
+}
+
+.imagemtres img {
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 50px;
+  margin: 50px;
+  margin-top: 150px;
+  box-shadow: #858383 0px 5px 15px;
+  margin-bottom: 100px;
+}
+
+.video iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
 }
