@@ -36,6 +36,7 @@ nav a {
   margin: 5px;
   display: inline-block;
   transition: 0.3s;
+  font-size: 1.2rem
 }
 
 nav a:hover {
