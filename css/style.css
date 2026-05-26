@@ -17,6 +17,7 @@
   --radius: 25px;
   --tituloNuvem: #2b4c7e;
   --subtexto: #f9f9f9;
+  --rosa-botao: #ffcfd9;
 
 }
 
@@ -88,6 +89,17 @@ nav a {
   border-radius: 20px;
   font-weight: bold;
   transition: 0.3s;
+}
+
+.cadastroLogin {
+
+  background: var(--rosa-botao);
+}
+
+.cadastroLogin:hover {
+
+  background: var(--rosa-hover);
+  transform: scale(1.05);
 }
 
 nav a:hover {
@@ -459,6 +471,7 @@ button:hover {
   border-radius: var(--radius);
   text-align: center;
   box-shadow: var(--sombra);
+  border-left: 5px solid var(--rosa);
 }
 
 .historia p {
