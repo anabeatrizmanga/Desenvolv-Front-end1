@@ -4,6 +4,46 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* variáveis */
+:root {
+
+  --azul: #a8d8ff;
+  --rosa: #ffc0cb;
+  --rosa-hover: #ff7eb3;
+  --branco: #ffffff;
+  --texto: #333;
+  --card: rgba(255, 255, 255, 0.75);
+  --sombra: 0 8px 20px rgba(0, 0, 0, 0.15);
+  --radius: 25px;
+  --tituloNuvem: #2b4c7e;
+  --subtexto: #f9f9f9;
+  --rosa-botao: #ffcfd9;
+
+}
+nav {
+
+  padding: 20px 5%;
+}
+
+nav ul {
+
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav a {
+
+  text-decoration: none;
+  color: var(--branco);
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
 /* BODY */
 body {
@@ -20,28 +60,6 @@ h2 {
   color: white;
   font-size: 2.3rem;
   margin-bottom: 20px;
-}
-
-/* NAVBAR */
-nav {
-  margin-bottom: 30px;
-}
-
-nav ul {
-  list-style: none;
-}
-
-/* LINKS */
-nav a {
-  text-decoration: none;
-  color: white;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 10px 18px;
-  border-radius: 20px;
-  margin: 5px;
-  display: inline-block;
-  transition: 0.3s;
-  font-size: 1.2rem
 }
 
 /* HOVER */
@@ -63,4 +81,14 @@ img {
 /* EFEITO */
 img:hover {
   transform: scale(1.01);
+}
+
+.imagemLogo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  justify-content: left;
 }

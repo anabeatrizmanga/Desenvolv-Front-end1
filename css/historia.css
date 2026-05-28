@@ -81,3 +81,13 @@ div p:hover {
   transform: scale(1.01);
   transition: 0.3s;
 }
+
+.imagemLogo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  justify-content: left;
+}
