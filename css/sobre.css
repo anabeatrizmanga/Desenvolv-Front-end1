@@ -4,7 +4,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* variáveis */
+:root {
 
+  --azul: #a8d8ff;
+  --rosa: #ffc0cb;
+  --rosa-hover: #ff7eb3;
+  --branco: #ffffff;
+  --texto: #333;
+  --card: rgba(255, 255, 255, 0.75);
+  --sombra: 0 8px 20px rgba(0, 0, 0, 0.15);
+  --radius: 25px;
+  --tituloNuvem: #2b4c7e;
+  --subtexto: #f9f9f9;
+  --rosa-botao: #ffcfd9;
+
+}
 /* BODY */
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -23,31 +38,30 @@ h2 {
 
 /* NAV */
 nav {
-  margin-bottom: 30px;
+
+  padding: 20px 5%;
 }
 
 nav ul {
+
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
   list-style: none;
 }
 
 nav a {
 
-  top: 20px;
-  right: 20px;
   text-decoration: none;
-  color: white;
+  color: var(--branco);
   background: rgba(255, 255, 255, 0.2);
-  padding: 8px 15px;
-  border-radius: 15px;
-  margin: 5px;
-  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-weight: bold;
   transition: 0.3s;
-  font-size: 1.2rem;
 }
 
-nav a:hover {
-  background: rgba(255, 255, 255, 0.5);
-}
 
 /* CONTEÚDO */
 main {
@@ -81,4 +95,13 @@ h3 {
 main:hover {
   transform: scale(1.01);
   transition: 0.3s;
+}
+.imagemLogo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  justify-content: left;
 }
