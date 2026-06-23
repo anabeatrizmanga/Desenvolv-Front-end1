@@ -1,5 +1,5 @@
 * {
-  margin: 10px;
+  margin: 0px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -36,32 +36,40 @@ h2 {
 
 /* nav */
 nav {
-  margin-bottom: 10px;
+  margin: 30px 0;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   flex-wrap: wrap;
+  padding: 10px;
+  margin: 0;
+}
+
+nav li {
+  margin: 0;
 }
 
 nav a {
-
+  display: inline-block;
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.2);
+  color: var(--tituloNuvem);
+  background: rgba(255,255,255,.2);
   padding: 12px 20px;
+  border: 2px solid var(--tituloNuvem);
   border-radius: 20px;
   font-weight: bold;
-  transition: 0.3s;
-  border: 2px solid var(--tituloNuvem);
-  color: var(--tituloNuvem);
+  transition: 3s;
 }
 
 nav a:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255,255,255,.5);
+  transform: scale(1.05);
 }
-
 div p {
   max-width: 800px;
   margin: 15px auto;

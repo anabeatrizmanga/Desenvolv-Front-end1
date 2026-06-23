@@ -58,16 +58,15 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: var(--branco);
+  color: var(--tituloNuvem);
   background: rgba(255, 255, 255, 0.2);
   padding: 12px 20px;
   border-radius: 20px;
-  font-weight: bold;
-  transition: 0.3s;
   border: 2px solid var(--tituloNuvem);
-  color: var(--tituloNuvem);
-  display: flex;
-  flex-direction: column;
+  font-weight: bold;
+  transition: .3s;
+  display: inline-block;
+  width: auto;
 }
 
 nav a:hover {
