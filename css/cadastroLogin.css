@@ -51,7 +51,7 @@ nav ul {
 
     list-style: none;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
 }

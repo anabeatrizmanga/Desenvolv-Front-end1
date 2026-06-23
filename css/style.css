@@ -587,12 +587,12 @@ footer {
     height: 400px;
   }
 
-  nav ul{
+  nav ul {
     gap: 15px;
   }
 
 }
- 
+
 /* celulares */
 @media (max-width: 768px) {
 
