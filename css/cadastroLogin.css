@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variáveis */
+:root {
+
+    --azul: #a8d8ff;
+    --rosa: #ffc0cb;
+    --rosa-hover: #ff7eb3;
+    --branco: #ffffff;
+    --texto: #333;
+    --card: rgba(255, 255, 255, 0.8);
+    --sombra: 0 8px 20px rgba(0, 0, 0, 0.15);
+    --radius: 25px;
+    --tituloNuvem: #2b4c7e;
+    --rosa-botao: #ffcfd9;
+}
+
+/* body */
+body {
+    font-family: 'Fredoka', Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, var(--azul), var(--branco), var(--rosa));
+    min-height: 100vh;
+    color: var(--texto);
+}
+
+/* título */
+header {
+
+    text-align: center;
+    padding-top: 40px;
+}
+
+.tituloNuvem {
+
+    color: white;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+/* navegação */
+nav {
+
+    padding: 25px 5%;
+}
+
+nav ul {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+nav a {
+
+    text-decoration: none;
+    color: var(--tituloNuvem);
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid var(--tituloNuvem);
+    border-radius: 25px;
+    padding: 12px 22px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);
+}
+
+/* container formulário */
+.cadastroContainer {
+
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+/* formulário */
+form {
+
+    width: 100%;
+    max-width: 800px;
+    background: var(--card);
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* labels */
+label {
+
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* campos */
+
+input,
+select {
+
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+/* foco */
+input:focus,
+select:focus {
+
+    outline: none;
+    border-color: var(--rosa-hover);
+    box-shadow: 0 0 8px rgba(255, 126, 179, 0.4);
+}
+
+/* checkbox */
+.form-check {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.form-check input {
+
+    width: auto;
+}
+
+.form-check label {
+
+    margin: 0;
+}
+
+/* botão */
+button {
+
+    margin-top: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background: var(--rosa-botao);
+    color: var(--texto);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+
+    background: var(--rosa-hover);
+    color: white;
+    transform: scale(1.02);
+}
+
+/* tablets */
+@media (max-width: 992px) {
+
+    .tituloNuvem {
+
+        font-size: 2.5rem;
+    }
+
+    form {
+
+        max-width: 90%;
+    }
+    nav ul {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    line-height: 3rem;
+}
+}
+
+/* celulares */
+@media (max-width: 768px) {
+
+    .tituloNuvem {
+
+        font-size: 2rem;
+    }
+
+    nav ul {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+
+        width: 90%;
+        text-align: center;
+    }
+
+    form {
+
+        padding: 25px;
+    }
+
+    input,
+    select {
+
+        padding: 12px;
+    }
+
+    button {
+
+        width: 100%;
+    }
+}
+
+/* celulares pequenos */
+@media (max-width: 480px) {
+
+    .tituloNuvem {
+
+        font-size: 1.7rem;
+    }
+
+    form {
+
+        padding: 20px;
+    }
+
+    input,
+    select {
+
+        font-size: 0.9rem;
+    }
+
+    button {
+
+        font-size: 0.9rem;
+    }
+}

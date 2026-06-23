@@ -89,6 +89,8 @@ nav a {
   border-radius: 20px;
   font-weight: bold;
   transition: 0.3s;
+  border: 2px solid var(--tituloNuvem);
+  color: var(--tituloNuvem);
 }
 
 .cadastroLogin {
@@ -584,6 +586,11 @@ footer {
   .video iframe {
     height: 400px;
   }
+
+  nav ul{
+    gap: 15px;
+  }
+
 }
 
 /* celulares */

@@ -1,9 +1,9 @@
-/* RESET */
 * {
   margin: 10px;
   padding: 0;
   box-sizing: border-box;
 }
+
 /* variáveis */
 :root {
 
@@ -20,23 +20,24 @@
   --rosa-botao: #ffcfd9;
 
 }
-/* BODY */
+
+/* body */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Fredoka', Arial, Helvetica, sans-serif;
   background: linear-gradient(to bottom, #a8d8ff, #ffffff, #ffc0cb);
   color: #333;
   text-align: center;
   padding: 20px;
 }
 
-/* TÍTULO */
+/* titulo */
 h2 {
   color: white;
   font-size: 2.2rem;
   margin-bottom: 15px;
 }
 
-/* NAV */
+/* nav */
 nav {
 
   padding: 20px 5%;
@@ -60,10 +61,10 @@ nav a {
   border-radius: 20px;
   font-weight: bold;
   transition: 0.3s;
+  border: 2px solid var(--tituloNuvem);
+  color: var(--tituloNuvem);
 }
 
-
-/* CONTEÚDO */
 main {
   max-width: 800px;
   margin: auto;
@@ -73,29 +74,26 @@ main {
   text-align: left;
 }
 
-/* PARÁGRAFOS */
 p {
   margin-bottom: 20px;
   line-height: 1.6;
 }
 
-/* SUBTÍTULOS */
 h3 {
   margin-top: 20px;
   margin-bottom: 10px;
   color: #ff7eb3;
 }
 
-/* DESTAQUE */
 .subtexto {
   font-size: 1.2rem;
 }
 
-/* EFEITO LEVE */
 main:hover {
   transform: scale(1.01);
   transition: 0.3s;
 }
+
 .imagemLogo {
   width: 150px;
   height: auto;
@@ -104,4 +102,110 @@ main:hover {
   box-shadow: none;
   display: flex;
   justify-content: left;
+}
+
+@media (max-width: 992px) {
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  main {
+    width: 90%;
+    padding: 25px;
+  }
+
+  nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  nav a {
+    display: block;
+    text-align: center;
+  }
+
+  .imagemLogo {
+    width: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  main {
+    width: 95%;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .subtexto {
+    font-size: 1rem;
+  }
+
+  .imagemLogo {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    grid-template-columns: 1fr;
+    max-width: 220px;
+  }
+
+  nav a {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    padding: 15px;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .subtexto {
+    font-size: 0.95rem;
+  }
+
+  .imagemLogo {
+    width: 100px;
+  }
 }
